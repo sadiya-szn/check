@@ -6,7 +6,7 @@
 
 body {
   width: 100%;
-  /* height: 100%; */
+  height: 100%;
 
   /* background-color: #ffffff; */
 }
@@ -198,12 +198,17 @@ header {
 }
 
 .articles {
-  /*the grid was bigger than the body, it overflowed
-  /* display: grid; */
-  /* grid-template-columns: repeat(3, 1fr); */
+  /*the grid was bigger than the body, it overflowed*/
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+
   gap: 50px;
 }
-
+/*added a new class for the images in the article we need to make them reposive and not static */
+.article-img {
+  width: 200px;
+  height: 200px;
+}
 .crdimg {
   margin-bottom: 10px;
   /* position: relative; */
